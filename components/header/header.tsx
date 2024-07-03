@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Menu from "./Menu";
 
 const Header = () => {
   return (
@@ -8,18 +9,7 @@ const Header = () => {
           <Link href="/" className="btn btn-ghost text-lg">
             NextCommerce 🏬
           </Link>
-          <ul className="flex">
-            <li>
-              <Link className="btn btn-ghost rounded-btn" href="/cart">
-                Cart 🛒
-              </Link>
-            </li>
-            <li>
-              <Link className="btn btn-ghost rounded-btn" href="/cart">
-                Sign In
-              </Link>
-            </li>
-          </ul>
+          <Menu />
         </div>
       </nav>
     </header>
