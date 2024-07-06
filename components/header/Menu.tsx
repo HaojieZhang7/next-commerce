@@ -18,7 +18,7 @@ const Menu = () => {
       <ul className="flex items-stretch">
         <li>
           <Link className="btn btn-ghost rounded-btn" href="/cart">
-            🛒
+            Cart 🛒
             {mounted && items.length != 0 && (
               <div className="badge badge-secondary text-slate-200">
                 {items.reduce((a, c) => a + c.qty, 0)}{" "}
@@ -28,7 +28,7 @@ const Menu = () => {
         </li>
         <li>
           <button className="btn btn-ghost rounded-btn" type="button">
-            Sign in
+            Login
           </button>
         </li>
       </ul>
