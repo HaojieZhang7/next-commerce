@@ -1,12 +1,5 @@
 import mongoose from "mongoose";
 
-export type User = {
-  _id: string;
-  name: string;
-  email: string;
-  isAdmin: boolean;
-};
-
 const UserSchema = new mongoose.Schema(
   {
     name: {
