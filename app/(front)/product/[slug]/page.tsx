@@ -1,5 +1,5 @@
 import AddtoCart from "@/components/products/AddtoCart";
-import data from "@/lib/data";
+import SizeSelector from "@/components/products/SizeSelector";
 import productService from "@/lib/services/productService";
 import { convertDocToObj } from "@/lib/utils";
 import Image from "next/image";
@@ -48,7 +48,7 @@ export default async function ProductDetails({
               width: "100%",
               height: "auto",
             }}
-          ></Image>
+          />
         </div>
         <div>
           <ul className="space-y-4">
@@ -60,8 +60,12 @@ export default async function ProductDetails({
             </li>
             <li>{product.brand}</li>
             <li>
+              <SizeSelector sizes={["Small", "Medium", "Large"]} />
+            </li>
+            <li>
               <div className="divider"></div>
             </li>
+            <li></li>
             <li>
               Description: <p>{product.description}</p>
             </li>
