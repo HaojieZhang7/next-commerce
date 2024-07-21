@@ -24,7 +24,7 @@ export default function RootLayout({
             <Header />
             {children}
             <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-              <p>Copyright © 2023 - All rights reserved by NextCommerce</p>
+              <p>Copyright © 2024 - All rights reserved by NextCommerce</p>
             </footer>
           </div>
         </Providers>
